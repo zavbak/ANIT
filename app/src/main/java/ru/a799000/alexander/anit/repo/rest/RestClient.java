@@ -8,7 +8,7 @@ import retrofit2.adapter.rxjava2.RxJava2CallAdapterFactory;
 import retrofit2.converter.gson.GsonConverterFactory;
 
 public class RestClient {
-    private static final String VK_BASE_URL = "http://192.168.1.52/test/hs/test/";
+    private static final String VK_BASE_URL = "http://192.168.1.52/test/hs/";
 
     private Retrofit mRetrofit;
 
