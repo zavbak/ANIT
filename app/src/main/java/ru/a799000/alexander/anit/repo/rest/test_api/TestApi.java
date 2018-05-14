@@ -1,4 +1,4 @@
-package ru.a799000.alexander.anit.repo.rest.test;
+package ru.a799000.alexander.anit.repo.rest.test_api;
 
 import java.util.Map;
 

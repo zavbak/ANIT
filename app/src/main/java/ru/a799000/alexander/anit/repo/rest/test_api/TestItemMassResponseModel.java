@@ -1,10 +1,7 @@
-package ru.a799000.alexander.anit.repo.rest.test;
+package ru.a799000.alexander.anit.repo.rest.test_api;
 
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
-
-
-import java.util.List;
 
 public class TestItemMassResponseModel {
 
