@@ -5,8 +5,9 @@ import javax.inject.Singleton;
 import dagger.Module;
 import dagger.Provides;
 import ru.a799000.alexander.anit.repo.rest.RestClient;
-import ru.a799000.alexander.anit.repo.rest.test_api.TestApi;
-import ru.a799000.alexander.anit.repo.rest.test_get.TestGetApi;
+
+import ru.a799000.alexander.anit.repo.rest.methods.contractors.ContractorsGetApi;
+import ru.a799000.alexander.anit.repo.rest.methods.test.TestGetApi;
 
 
 @Module
@@ -25,11 +26,7 @@ public class RestModule {
         return mRestClient;
     }
 
-    @Provides
-    @Singleton
-    public TestApi provideTestApi() {
-        return mRestClient.createService(TestApi.class);
-    }
+
 
     @Provides
     @Singleton
@@ -37,6 +34,11 @@ public class RestModule {
         return mRestClient.createService(TestGetApi.class);
     }
 
+    @Provides
+    @Singleton
+    public ContractorsGetApi provideContractorsGetApi() {
+        return mRestClient.createService(ContractorsGetApi.class);
+    }
 
 
 }

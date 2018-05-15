@@ -9,7 +9,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 
-public abstract class BaseRqModel {
+public abstract class BaseRqMod {
 
 
     public Map<String, String> toMap() {

@@ -1,0 +1,18 @@
+package ru.a799000.alexander.anit.repo.rest.methods.contractors;
+
+import java.util.Map;
+
+import io.reactivex.Observable;
+import retrofit2.http.GET;
+import retrofit2.http.Header;
+import retrofit2.http.QueryMap;
+import ru.a799000.alexander.anit.repo.rest.BaseRsMod;
+import ru.a799000.alexander.anit.repo.rest.methods.test.TestGetRsMod;
+
+
+public interface ContractorsGetApi {
+    @GET("contractors.get/")
+    Observable<BaseRsMod<ContractorsGetRsMod>> getData(
+            @QueryMap Map<String, String> map,
+            @Header("Authorization") String auth);
+}

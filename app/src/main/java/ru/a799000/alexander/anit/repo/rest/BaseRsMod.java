@@ -5,7 +5,7 @@ import com.google.gson.annotations.SerializedName;
 
 import java.util.Date;
 
-public class BaseRsModel<T> {
+public class BaseRsMod<T> {
     @SerializedName("Пришел")
     @Expose
     public Date received;
@@ -26,6 +26,14 @@ public class BaseRsModel<T> {
     @Expose
     public T response;
 
-
-
+    @Override
+    public String toString() {
+        return "BaseRsMod{" +
+                "received=" + received +
+                ", prepared=" + prepared +
+                ", error=" + error +
+                ", description_error='" + description_error + '\'' +
+                ", response=" + response +
+                '}';
+    }
 }
