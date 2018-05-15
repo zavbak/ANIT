@@ -3,8 +3,9 @@ package ru.a799000.alexander.anit;
 import android.app.Application;
 
 import ru.a799000.alexander.anit.di.component.AppComponent;
-import ru.a799000.alexander.anit.di.component.DaggerAppComponent;
 
+
+import ru.a799000.alexander.anit.di.component.DaggerAppComponent;
 import ru.a799000.alexander.anit.di.module.ApplicationModule;
 
 public class App extends Application {

@@ -1,9 +1,9 @@
-package ru.a799000.alexander.anit.repo.rest.methods.contractors;
+package ru.a799000.alexander.anit.model;
 
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
-class ContractorMod {
+public class ContractorMod {
 
     @SerializedName("Наименование")
     @Expose
